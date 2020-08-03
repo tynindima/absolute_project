@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700; }
-
 .menu-button {
   width: 24px;
   height: 18px;
@@ -23,14 +11,15 @@
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .menu-button span {
   display: block;
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #0049b0;
+  background: $text-primary;
   border-radius: 4px;
   opacity: 1;
   left: 0;
@@ -41,28 +30,32 @@
   -webkit-transition: .25s ease-in-out;
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out; }
+  transition: .25s ease-in-out;
+}
 
 .menu-button span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center; }
+  transform-origin: left center;
+}
 
 .menu-button span:nth-child(2) {
   top: 7px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center; }
+  transform-origin: left center;
+}
 
 .menu-button span:nth-child(3) {
   top: 14px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center; }
+  transform-origin: left center;
+}
 
 .menu-button.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
@@ -70,11 +63,13 @@
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -2px;
-  left: 3px; }
+  left: 3px;
+}
 
 .menu-button.open span:nth-child(2) {
   width: 0%;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .menu-button.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
@@ -82,50 +77,5 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 15px;
-  left: 3px; }
-
-body {
-  background-color: white; }
-
-.button-search {
-  width: 77px;
-  position: relative; }
-
-.search-icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.search-mobile-btn {
-  display: flex;
-  margin-left: 24px;
-  width: 28px;
-  height: 28px;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer; }
-
-.header-top {
-  height: 120px; }
-
-.nav-style {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #202020; }
-  .nav-style:hover {
-    color: #0049b0; }
-
-.search-mob-cnt {
-  height: 50px; }
-
-@media (min-width: 768px) {
-  .search-mobile-btn {
-    display: none; } }
-
-@media (min-width: 992px) {
-  .menu-button {
-    display: none; } }
+  left: 3px;
+}

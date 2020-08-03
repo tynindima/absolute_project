@@ -1,0 +1,7 @@
+/.git
+/.vscode
+node_modules
+gulpfile.js
+/src/js/bootstrap.min.js
+/src/js/jquery.min.js
+/src/js/popper.min.js

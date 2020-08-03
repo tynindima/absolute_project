@@ -1,5 +1,65 @@
-$bh-color: green;
+@import "fonts";
+@import "utils/vars";
+@import "menu-button";
+
 
 body {
   background-color: $bh-color;
+}
+
+.button-search {
+  width: 77px;
+  position: relative;
+}
+
+.search-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-mobile-btn {
+  display: flex;
+  margin-left: 24px;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header-top {
+  height: 120px;
+}
+
+.nav-style {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $text-dark;
+
+  &:hover {
+    color: $text-primary;
+  }
+}
+
+.search-mob-cnt {
+  height: 50px;
+
+}
+
+
+@media (min-width: 768px) {
+  .search-mobile-btn {
+    display: none;
+  }
+ }
+
+@media (min-width: 992px) {
+  .menu-button {
+    display: none;
+  }
 }
