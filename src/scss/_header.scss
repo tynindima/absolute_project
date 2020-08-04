@@ -1,3 +1,18 @@
+.header {
+  &__logo {
+    height: 43px;
+    width: 172px;
+    background-image: url('../img/header/absolute_mobile_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .button-search {
   width: 77px;
   position: relative;
@@ -63,6 +78,14 @@
  }
 
 @media (min-width: 1200px) {
+  .header {
+    &__logo {
+      height: 61px;
+      width: 244px;
+      background-image: url('../img/header/absolute_logo.png');
+    }
+  }
+
   .menu-button {
     display: none;
   }

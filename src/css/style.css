@@ -84,6 +84,17 @@
   top: 15px;
   left: 3px; }
 
+.header__logo {
+  height: 43px;
+  width: 172px;
+  background-image: url("../img/header/absolute_mobile_logo.png");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.header__input {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .button-search {
   width: 77px;
   position: relative; }
@@ -132,10 +143,178 @@
     display: none; } }
 
 @media (min-width: 1200px) {
+  .header__logo {
+    height: 61px;
+    width: 244px;
+    background-image: url("../img/header/absolute_logo.png"); }
   .menu-button {
     display: none; }
   .header-nav__item {
     justify-content: center; } }
+
+.my-btn {
+  margin: 10px;
+  border-radius: 2px; }
+
+.my-btn-primary {
+  background-color: #0049b0;
+  border-color: #0049b0; }
+  .my-btn-primary:hover {
+    opacity: 0.9; }
+
+.my-btn-default {
+  color: #0049b0;
+  border-color: #0049b0; }
+  .my-btn-default:hover {
+    color: white;
+    background-color: #0049b0; }
+
+.my-btn-success {
+  background-color: #34bf49;
+  border-color: #34bf49; }
+
+.my-btn-info {
+  background-color: #6dcff6;
+  border-color: #6dcff6; }
+
+.my-btn-warning {
+  background-color: #f49a9e;
+  border-color: #f49a9e;
+  color: white; }
+  .my-btn-warning:hover {
+    color: white;
+    background-color: #d18387; }
+
+.my-btn-danger {
+  background-color: #ed1c24;
+  border-color: #ed1c24; }
+  .my-btn-danger:hover {
+    opacity: 0.9; }
+
+.main-section {
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-top: 15px; }
+
+@media (min-width: 768px) {
+  .main-section {
+    margin-top: 65px; } }
+
+@media (min-width: 1200px) {
+  .main-section {
+    margin-top: 95px; } }
+
+.main-title {
+  font-size: 36px; }
+
+.inputs__label {
+  font-size: 15px;
+  font-weight: 400; }
+
+.inputs__ctr {
+  margin-top: 38px; }
+
+.switch-ctr__text {
+  margin-left: 10px; }
+
+.switch-ctr__switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 20px; }
+
+.switch-ctr__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.switch-ctr__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f49a9e;
+  border-radius: 20px;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.switch-ctr__slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .switch-ctr__slider {
+  background-color: #34bf49; }
+
+input:focus + .switch-ctr__slider {
+  box-shadow: 0 0 1px #34bf49; }
+
+input:checked + .switch-ctr__slider:before {
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px); }
+
+.checkbox-cstm {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */ }
+  .checkbox-cstm__container {
+    display: block;
+    position: relative;
+    padding-left: 29px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .checkbox-cstm__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .checkbox-cstm__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border: 1px solid #464646; }
+  .checkbox-cstm__container:hover input ~ .checkbox-cstm__checkmark {
+    background-color: #eaecf0; }
+  .checkbox-cstm__container input:checked ~ .checkbox-cstm__checkmark:after {
+    border-color: #6dcff6; }
+  .checkbox-cstm__container input:checked ~ .checkbox-cstm__checkmark {
+    border-color: #6dcff6; }
+  .checkbox-cstm__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid #6dcff6;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .checkbox-cstm__container input:checked ~ .checkbox-cstm__checkmark:after {
+    display: block; }
 
 body {
   background-color: white; }

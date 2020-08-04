@@ -1,0 +1,55 @@
+.my-btn {
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.my-btn-primary {
+  background-color: $text-primary;
+  border-color: $text-primary;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.my-btn-default {
+  color: $text-primary;
+  border-color: $text-primary;
+
+
+  &:hover {
+    color: white;
+    background-color: $text-primary;
+  }
+}
+
+.my-btn-success {
+  background-color: $success-color;
+  border-color: $success-color;
+}
+
+.my-btn-info {
+  background-color: $info-color;
+  border-color: $info-color;
+}
+
+.my-btn-warning {
+  background-color: $warning-color;
+  border-color: $warning-color;
+  color: white;
+
+  &:hover {
+    color: white;
+    background-color: #d18387;
+  }
+
+}
+
+.my-btn-danger{
+  background-color: $danger-color;
+  border-color: $danger-color;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,21 @@
+.main-section {
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-top: $margin-top-sm;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    margin-top: $margin-top-md;
+  }
+ }
+
+ @media (min-width: 1200px) {
+  .main-section {
+    margin-top: $margin-top-lg;
+  }
+}
+
+.main-title {
+  font-size: 36px;
+}

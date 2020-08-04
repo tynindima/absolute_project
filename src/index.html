@@ -23,14 +23,14 @@
             <span></span>
             <span></span>
           </div>
-          <img src="./img/header/absolute_logo.png" alt="absolute" class="logo">
+          <div class="header__logo"></div>
           <div class="search-mobile-btn">
             <img src="./img/header/search-mobile.png" alt="search" id="search-mobile-btn">
           </div>
         </div>
 
-        <div class="col-xl-4 col-md-6 ml-auto collapse" id="input-cnt-top">
-          <div class="input-group ">
+        <div class="col-xl-4 col-md-6 ml-auto collapse " id="input-cnt-top">
+          <div class="input-group header__input">
             <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
               aria-describedby="basic-addon2">
             <div class="input-group-append">
@@ -74,15 +74,86 @@
     </div>
   </header>
 
-  <section id="buttons" class="buttons">
+  <section id="buttons" class="buttons main-section">
     <div class="container">
-      Buttons
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h2 class="main-title">Buttons</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-md-center flex-wrap">
+          <button type="button" class="btn btn-primary my-btn my-btn-primary">Primary</button>
+          <button type="button" class="btn btn-outline-primary my-btn my-btn-default">Default</button>
+          <button type="button" class="btn btn-success my-btn my-btn-success">Success</button>
+          <button type="button" class="btn btn-info my-btn my-btn-info">Info</button>
+          <button type="button" class="btn btn-warning my-btn my-btn-warning">Warning</button>
+          <button type="button" class="btn btn-danger my-btn my-btn-danger">Danger</button>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="inputs" class="inputs">
+  <section id="inputs" class="inputs main-section">
     <div class="container">
-      Inputs
+      <div class="row">
+        <div class="col">
+          <div class="col d-flex justify-content-center">
+            <h2 class="main-title">Inputs</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-around justify-content-xl-center ">
+        <!-- Checkbox -->
+        <div class="col-md-3 col-lg-3 col-xl-2 inputs__ctr">
+          <div class="checkbox-cstm">
+            <label class="checkbox-cstm__container inputs__label">Checkbox Active
+              <input type="checkbox" checked>
+              <span class="checkbox-cstm__checkmark"></span>
+            </label>
+          </div>
+          <div class="checkbox-cstm">
+            <label class="checkbox-cstm__container inputs__label">Checkbox
+              <input type="checkbox">
+              <span class="checkbox-cstm__checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <!-- Radio buton -->
+        <div class="col-md-3 col-lg-2 col-xl-2 inputs__ctr">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label inputs__label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label inputs__label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+        </div>
+        <!--Switcher -->
+        <div class="col-md-3 col-lg-3 col-xl-2 inputs__ctr">
+          <div class="switch-ctr">
+            <label class="switch-ctr__switch">
+              <input type="checkbox" checked>
+              <span class="switch-ctr__slider"></span>
+            </label>
+            <span class="inputs__label switch-ctr__text">Switcher ON</span>
+          </div>
+          <div class="switch-container">
+            <label class="switch-ctr__switch">
+              <input type="checkbox">
+              <span class="switch-ctr__slider"></span>
+            </label>
+            <span class="inputs__label switch-ctr__text">Switcher OFF</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

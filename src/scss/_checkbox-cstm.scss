@@ -1,0 +1,69 @@
+.checkbox-cstm {
+  &__container {
+    display: block;
+    position: relative;
+    padding-left: 29px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  &__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border: 1px solid #464646;
+  }
+
+  /* On mouse-over, add a grey background color */
+  &__container:hover input ~ &__checkmark {
+    background-color: $hover-bg;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  &__container input:checked ~ &__checkmark:after {
+    border-color: $info-color;
+  }
+
+  &__container input:checked ~ &__checkmark {
+    border-color: $info-color;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  &__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border: solid $info-color;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* Show the checkmark when checked */
+  &__container input:checked ~ &__checkmark:after {
+    display: block;
+  }
+
+}
