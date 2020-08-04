@@ -84,9 +84,6 @@
   top: 15px;
   left: 3px; }
 
-body {
-  background-color: white; }
-
 .button-search {
   width: 77px;
   position: relative; }
@@ -110,22 +107,35 @@ body {
 .header-top {
   height: 120px; }
 
-.nav-style {
+.header-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 60px;
+  width: 155px;
+  transition: background-color .2s;
+  cursor: pointer; }
+  .header-nav__item:hover {
+    background-color: #eaecf0; }
+
+.header-nav__link {
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: #202020; }
-  .nav-style:hover {
+  .header-nav__link:hover {
     color: #0049b0; }
-
-.search-mob-cnt {
-  height: 50px; }
 
 @media (min-width: 768px) {
   .search-mobile-btn {
     display: none; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .menu-button {
-    display: none; } }
+    display: none; }
+  .header-nav__item {
+    justify-content: center; } }
+
+body {
+  background-color: white; }
