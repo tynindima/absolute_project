@@ -1,0 +1,39 @@
+.media {
+  margin-top: 23px;
+  margin-bottom: 43px;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: $text-dark;
+    border-radius: 2px;
+    cursor: pointer;
+    translate: .3s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $text-primary;
+    }
+  }
+}
+
+.media-head {
+  color: $text-primary;
+  font-size: 16px;
+
+}
+
+@media (max-width: 992px) {
+  .media {
+    &__box {
+      margin-right: 20px;
+    }
+  }
+}

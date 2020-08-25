@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
       <div class="row row-cols-1 collapse" id="menu-cnt-top">
         <div class="col">
-          <nav>
+          <nav >
             <ul class="nav header-nav flex-column flex-xl-row" >
               <li class="nav-item header-nav__item">
                 <a class="nav-link header-nav__link" href="#">Home</a>
@@ -97,10 +98,8 @@
   <section id="inputs" class="inputs main-section">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="col d-flex justify-content-center">
-            <h2 class="main-title">Inputs</h1>
-          </div>
+        <div class="col d-flex justify-content-center">
+          <h2 class="main-title">Inputs</h1>
         </div>
       </div>
 
@@ -122,16 +121,16 @@
         </div>
         <!-- Radio buton -->
         <div class="col-md-3 col-lg-2 col-xl-2 inputs__ctr">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label inputs__label" for="exampleRadios1">
-              Default radio
+          <div class="radio-cstm">
+            <label class="radio-cstm__container inputs__label">Radio Active
+              <input type="radio" checked="checked" name="radio">
+              <span class="radio-cstm__checkmark"></span>
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label inputs__label" for="exampleRadios1">
-              Default radio
+          <div class="radio-cstm">
+            <label class="radio-cstm__container inputs__label">Radio
+              <input type="radio" name="radio">
+              <span class="radio-cstm__checkmark"></span>
             </label>
           </div>
         </div>
@@ -157,35 +156,263 @@
     </div>
   </section>
 
-  <section id="star_rating" class="star_rating">
+  <section id="star_rating" class="star_rating main-section">
     <div class="container">
-      Stars
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h2 class="main-title">Star rating</h1>
+        </div>
+      </div>
+
+      <div class="row flex-column">
+        <div class="col d-flex justify-content-center">
+          <div class="rating">
+            <div class="rating__star"></div>
+            <div class="rating__star"></div>
+            <div class="rating__star"></div>
+            <div class="rating__star"></div>
+            <div class="rating__star"></div>
+            <span class="inputs__label rating__text">Show rating</span>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="rating stars--3" id="rating">
+            <div class="rating__star" id="star--1"></div>
+            <div class="rating__star" id="star--2"></div>
+            <div class="rating__star" id="star--3"></div>
+            <div class="rating__star" id="star--4"></div>
+            <div class="rating__star" id="star--5"></div>
+            <span class="inputs__label rating__text">Check rating</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <section id="carousel" class="carousel">
+  <section id="carousel" class="carousel main-section">
     <div class="container">
-      Carousel
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <h2 class="main-title">Carousel</h1>
+        </div>
+      </div>
+      <div class="row carousel-ctr">
+        <div class="col">
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 col-xl-4 d-flex justify-content-md-end justify-content-center">
+                      <div class="carousel-img-ctr">
+                        <img class="carousel-img-ctr__img" src="./img/carousel/Chewbacca.png" alt="Chewbacca">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex align-items-center">
+                      <div class="carousel-txt-ctr">
+                        <p class="carousel-txt-ctr__text">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                        <h3 class="carousel-txt-ctr__head">Chewbacca</h3>
+                        <p class="carousel-txt-ctr__data">July 2017</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 col-xl-4 d-flex justify-content-md-end justify-content-center">
+                      <div class="carousel-img-ctr">
+                        <img class="carousel-img-ctr__img" src="./img/carousel/dart_vaider.png" alt="Darth Vader">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex align-items-center">
+                      <div class="carousel-txt-ctr">
+                        <p class="carousel-txt-ctr__text">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                        <h3 class="carousel-txt-ctr__head">Darth Vader</h3>
+                        <p class="carousel-txt-ctr__data">Junuary 2018</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 col-xl-4 d-flex justify-content-md-end justify-content-center">
+                      <div class="carousel-img-ctr">
+                        <img class="carousel-img-ctr__img" src="./img/carousel/Yoda.png" alt="Chewbacca">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex align-items-center">
+                      <div class="carousel-txt-ctr">
+                        <p class="carousel-txt-ctr__text">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                        <h3 class="carousel-txt-ctr__head">Yoda</h3>
+                        <p class="carousel-txt-ctr__data">May 2016</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 col-xl-4 d-flex justify-content-md-end justify-content-center">
+                      <div class="carousel-img-ctr">
+                        <img class="carousel-img-ctr__img" src="./img/carousel/r2-d2.png" alt="Chewbacca">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex align-items-center">
+                      <div class="carousel-txt-ctr">
+                        <p class="carousel-txt-ctr__text">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+                        <h3 class="carousel-txt-ctr__head">R2-D2</h3>
+                        <p class="carousel-txt-ctr__data">July 2018</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-btn carousel-btn__prev" id="carousel-btn-next">
+              <span class="carousel-btn__icon  "></span>
+            </div>
+            <div class="carousel-btn carousel-btn__next" id="carousel-btn-prev">
+              <span class="carousel-btn__icon carousel-btn__icon_next"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <ul class="carousel-pgn">
+            <li class="carousel-pgn__item">
+              <div class="carousel-pgn__box" id="carousel-ind-0">
+                <img class="carousel-pgn__img" src="./img/carousel/Chewbacca.png" alt="Chewbacca">
+              </div>
+            </li>
+            <li class="carousel-pgn__item">
+              <div class="carousel-pgn__box" id="carousel-ind-1">
+                <img class="carousel-pgn__img" src="./img/carousel/dart_vaider.png" alt="Chewbacca">
+              </div>
+            </li>
+            <li class="carousel-pgn__item">
+              <div class="carousel-pgn__box" id="carousel-ind-2">
+                <img class="carousel-pgn__img" src="./img/carousel/Yoda.png" alt="Chewbacca">
+              </div>
+            </li>
+            <li class="carousel-pgn__item">
+              <div class="carousel-pgn__box" id="carousel-ind-3">
+                <img class="carousel-pgn__img" src="./img/carousel/r2-d2.png" alt="Chewbacca">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="big_map" class="big_map">
-    <div class="container-fluid">
-      Map
+    <div class="container-fluid map">
+      <div id="map"></div>
     </div>
-
   </section>
 
   <footer id="footer" class="footer">
     <div class="container">
-      Footer
+      <div class="row">
+        <div class="col-lg-3 d-flex justify-content-center order-lg-last">
+          <div>
+            <h5 class="d-flex justify-content-center justify-content-lg-start media-head">Follow us</h5>
+            <div class="media">
+              <div class="media__box">
+                <img src="./img/footer/facebook.svg" alt="facebook">
+              </div>
+              <div class="media__box">
+                <img src="./img/footer/twitter.svg" alt="twitter">
+              </div>
+              <div class="media__box">
+                <img src="./img/footer/instagram.svg" alt="instagram">
+              </div>
+              <div class="media__box">
+                <img src="./img/footer/pinterest.svg" alt="pinterest">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-9">
+          <div class="row flex-column flex-md-row">
+            <div class="col">
+              <h4 class="footer__title">
+                Shop
+                <a class="arrow-icon">
+                  <span class="left-bar"></span>
+                  <span class="right-bar"></span>
+                </a>
+              </h4>
+              <ul class="list-unstyled footer__list collapse" >
+                <li class="footer__item"><a class="footer__link" href="#">Browse By Holidays</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Browse By Brand</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Gift of the Month Clubs</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Customized Bottles</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Corporate Gifts</a></li>
+              </ul>
+            </div>
+            <div class="col">
+
+              <h4 class="footer__title">
+                About
+                <a class="arrow-icon">
+                  <span class="left-bar"></span>
+                  <span class="right-bar"></span>
+                </a>
+              </h4>
+              <ul class="list-unstyled footer__list collapse">
+                <li class="footer__item"><a class="footer__link" href="#">About Spirited Gifts</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Read our Blog</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">About our Selection</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Read our Reviews</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="footer__title">
+                More
+                <a class="arrow-icon">
+                  <span class="left-bar"></span>
+                  <span class="right-bar"></span>
+                </a>
+              </h4>
+              <ul class="list-unstyled footer__list collapse">
+                <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Retailer Network</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Help and FAQs</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Scholarship</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </footer>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMY7Ww2tmD5dXWzqzXit2j4Y8f-_a0Frs&callback=initMap"
+      defer
+      >
+  </script>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/main.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,147 @@
+.carousel-ctr {
+  position: relative;
+}
+
+.text-carousel {
+  color: black;
+
+}
+
+.carousel-img-ctr {
+  height: 270px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &__img {
+    max-width: 100%;
+    max-width: 100%;
+  }
+}
+
+.carousel-txt-ctr {
+  &__text {
+    font-size: 16px;
+    color: #808080;
+    font-weight: 400;
+
+  }
+
+  &__head {
+    font-size: 20px;
+    color: #303030;
+  }
+
+  &__data {
+    font-size: 16px;
+    color: #303030;
+  }
+}
+
+.carousel-btn {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 42px;
+  transform: translateY(-50%);
+  border: 1px solid #dadada;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $text-primary;
+
+    .carousel-btn {
+      &__icon {
+        background-image: url('../img/carousel/next-active.svg');
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 12px;
+    height: 15px;
+    background-image: url('../img/carousel/next.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_next {
+      transform: rotate(0.5turn);
+    }
+  }
+
+  &__next {
+    left: 0;
+  }
+
+  &__prev {
+    right: 0;
+
+  }
+}
+
+.carousel-pgn {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 27px;
+
+  &__item {
+    margin: 10px;
+  }
+
+  &__box {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__img {
+    max-width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .carousel-img-ctr {
+    height: 187px;
+    width: 187px;
+  }
+
+  .carousel-ctr {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-ctr {
+    margin-top: 30px;
+  }
+
+  .carousel-txt-ctr {
+    margin-top: 15px;
+  }
+
+  .carousel-pgn {
+    &__box {
+      height: 61px;
+      width: 61px;
+    }
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+}

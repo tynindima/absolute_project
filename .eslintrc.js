@@ -17,6 +17,7 @@ module.exports = {
     "prefer-arrow-callback": "off",
     quotes: "off",
     "func-names": "off",
-    "space-in-parens": "off"
+    "space-in-parens": "off",
+    "no-plusplus": "off"
   }
 };

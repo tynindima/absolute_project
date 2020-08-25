@@ -13,6 +13,17 @@
   }
 }
 
+@media (min-width: 1100) {
+  .header {
+    &__sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+
+  }
+}
+
 .button-search {
   width: 77px;
   position: relative;
