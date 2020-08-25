@@ -1,0 +1,19 @@
+.map
+ {
+   display: block;
+   height: 455px;
+   background-color: grey;
+   padding: 0;
+
+
+ }
+
+ #map {
+   height: 100%;
+ }
+
+ @media (max-width: 1200px) {
+   .map {
+     display: none;
+   }
+ }

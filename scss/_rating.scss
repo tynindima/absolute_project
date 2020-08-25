@@ -1,0 +1,30 @@
+.rating {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 200px;
+
+  &__text {
+    margin-left: 16px;
+  }
+
+  &__star {
+    height: 16px;
+    width: 16px;
+    background: $star-inert;
+    cursor: pointer;
+
+    .stars--1 &:first-child,
+    .stars--2 &:nth-child(-n+2),
+    .stars--3 &:nth-child(-n+3),
+    .stars--4 &:nth-child(-n+4),
+    .stars--5 & {
+      background: $star-active;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 4px;
+    }
+  }
+}
+

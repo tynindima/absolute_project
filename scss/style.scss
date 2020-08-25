@@ -1,0 +1,19 @@
+@import "fonts";
+@import "utils/vars";
+@import "menu-button";
+@import "header";
+@import "buttons";
+@import "main-sections-stl";
+@import "inputs";
+@import "switch-cstm";
+@import "checkbox-cstm";
+@import "radio-cstm";
+@import "rating";
+@import "my-carousel";
+@import "map";
+@import "media";
+@import "footer";
+
+body {
+  background-color: $bh-color;
+}
